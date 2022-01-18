@@ -1,0 +1,3 @@
+
+{{ $image := resources.Get "little-duck.png" }}
+<img src="{{ ( $image.Resize "300x" ).RelPermalink }}" />
