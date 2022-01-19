@@ -145,3 +145,19 @@ If using subdirectories off assets, e.g. "/assets/css/styles.css", then that pat
 {{ $style := resources.Get "/css/styles.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
 ```
+## Deployment
+
+### Build
+
+```
+$ cd my-blog
+$ hugo --gc --minify
+```
+
+### Netlify
+Drag and drop "public" folder into new site.
+
+https://clever-hamilton-3b4f08.netlify.app/
+
+
+
